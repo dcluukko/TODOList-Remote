@@ -8,6 +8,9 @@ namespace ToDoList.Models
   {
     public string Description { get; set; }
     public int Id { get; }
+    public int ItemId {set; get;}
+    public virtual Category Category { get; set;}
+    
 
     public Item(string description)
     {

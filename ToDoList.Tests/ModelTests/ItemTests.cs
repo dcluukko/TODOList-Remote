@@ -56,16 +56,18 @@ namespace ToDoList.Tests
     //   Assert.AreEqual(updatedDescription, result);
     // }
 
-    [TestMethod]
-    public void GetAll_ReturnsEmptyListFromDatabase_ItemList()
-    {
-      //Arrage
-      List<Item> newList = new List<item> { };
-      //Act
-      List<Item> result = Item.GetAll();
-      //Assert
-      CollectionAssert.AreEqual(newList, result);
-    }
+ [TestMethod]
+public void GetAll_ReturnsEmptyListFromDatabase_ItemList()
+{
+  //Arrange
+  List<Item> newList = new List<Item> { };
+
+  //Act
+  List<Item> result = Item.GetAll();
+
+  //Assert
+  CollectionAssert.AreEqual(newList, result);
+}
 
     // [TestMethod]
     // public void GetAll_ReturnsItems_ItemList()
